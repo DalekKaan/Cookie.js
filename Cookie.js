@@ -58,7 +58,7 @@ Cookie.get = function (name) {
  * @returns {void}
  */
 Cookie.delete=function(name) {
-	setCookie(name, "", {
+	Cookie.set(name, "", {
 		expires: -1
 	});
 }
